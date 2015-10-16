@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unit Converter</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<style>
+			body
+			{
+				font-family: 'Lato';
+			}
+
+			.title
+			{
+				margin: 5px;
+				border-bottom: 1px solid #808080;
+			}
+
+			.converter
+			{
+				display: inline-block;
+				border: 0.5px solid #808080;
+				margin: 15px;
+				padding: 10px;
+				padding-top:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<h1>Unit Converter</h1>
+		</div>
+
+		<div class="converter">
+			<h2>Temperature</h2>
+
+			<table>
+				<tbody>
+					<tr>
+						<td>Fahrenheit</td>
+						<td><input type="text" id="Temp_F" class="Temp"> &deg;F</td>
+					</tr>
+					<tr>
+						<td>Celsius</td>
+						<td><input type="text" id="Temp_C" class="Temp"> &deg;C</td>
+					</tr>
+					<tr>
+						<td>Kelvin</td>
+						<td><input type="text" id="Temp_K" class="Temp"> &nbsp;K</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="converter">
+			<h2>Distance</h2>
+
+			<table>
+				<tbody>
+					<tr>
+						<td>Miles</td>
+						<td><input type="text" id="Dist_Mi" class="Distance"> Mi</td>
+					</tr>
+					<tr>
+						<td>Feet</td>
+						<td><input type="text" id="Dist_Ft" class="Distance"> Ft</td>
+					</tr>
+					<tr>
+						<td>Inches</td>
+						<td><input type="text" id="Dist_In" class="Distance"> In</td>
+					</tr>
+					<tr>
+						<td>Kilometers</td>
+						<td><input type="text" id="Dist_Km" class="Distance"> Km</td>
+					</tr>
+					<tr>
+						<td>Meters</td>
+						<td><input type="text" id="Dist_M" class="Distance"> M</td>
+					</tr>
+					<tr>
+						<td>Centimeters</td>
+						<td><input type="text" id="Dist_Cm" class="Distance"> Cm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
