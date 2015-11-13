@@ -1,9 +1,9 @@
 $(function(){
 	
-	//Clear all forms
+	//Clear all inputs
 	$('input').val('');
 
-	//Bind temperature inputs
+	//Bind inputs
 	$('.Temp').bind('change paste keyup', Temperature_Calculate);
 	$('.Distance').bind('change paste keyup', Distance_Calculate);
 });
@@ -16,6 +16,8 @@ function Distance_Calculate()
 
 	Value = parseFloat($(this).val());
 
+	//If the input isn't a valid number, clear
+	// the other values and return early
 	if(isNaN(Value))
 	{
 		$('.Distance').not($(this)).val('');
@@ -103,6 +105,8 @@ function Temperature_Calculate()
 
 	Value = parseFloat($(this).val());
 
+	//If the input isn't a valid number, clear
+	// the other values and return early
 	if(isNaN(Value))
 	{
 		$('.Temp').not($(this)).val('');
